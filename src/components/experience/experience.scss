@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.experience-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $dark;
+  padding: 16px;
+
+  @include large {
+    flex-direction: row;
+    padding: 36px;
+  }
+}
+
+.experience-column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include large {
+    height: 600px;
+  }
+}
+
+.experience-work-title {
+  font-size: 36px;
+  color: $blue;
+  margin-top: 50px;
+}
+
+.experience-list {
+  color: $white;
+  margin: 24px;
+  margin-left: 36px;
+}
+
+.experience-sub-title {
+  font-size: 24px;
+  color: $blue;
+  margin-top: 50px;
+}

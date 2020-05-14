@@ -1,0 +1,6 @@
+/* keeping the good practices of "Mobile first" and taking the smallest width of 320 px (Iphone 5), the default styling should be using this size, as width grows, we need to start using grid's sizes */
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px; // Original large 1200px

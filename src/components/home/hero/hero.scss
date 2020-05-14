@@ -1,0 +1,60 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.hero-container {
+  box-sizing: border-box;
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  @include large {
+    flex-direction: row;
+    height: 600px;
+    padding: 36px;
+  }
+}
+
+.hero-hello {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0px;
+  color: $light;
+
+  @include large {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+.hero-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  color: $white;
+  @include large {
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+.hero-description {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: $blue;
+  margin: 0;
+  @include large {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.hero-photo {
+  display: none;
+
+  @include large {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+  }
+}

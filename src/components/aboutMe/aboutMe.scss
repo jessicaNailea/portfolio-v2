@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.aboutMe-card {
+  display: flex;
+  align-items: center;
+  background-color: $dark;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+  @include large {
+    flex-direction: row;
+    height: 600px;
+  }
+}
+
+.aboutMe-description-container {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  width: 40%;
+  margin: 24px;
+
+  @include large {
+    font-size: 16px;
+  }
+}
+
+.aboutMe-image {
+  display: none;
+
+  @include large {
+    display: flex;
+  }
+}

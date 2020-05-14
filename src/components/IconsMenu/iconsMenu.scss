@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+#navMenu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iconsMenu-navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-bottom: 30px;
+}
+
+.iconsMenu-bg-dark {
+  color: $blue;
+  background-color: $dark;
+}
+
+.iconsMenu-options {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include medium {
+    flex-direction: row;
+  }
+}
+
+.iconsMenu-item {
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+  margin: 8px;
+
+  @include large {
+    width: fit-content;
+    color: $light;
+  }
+}
+
+.iconsMenu-avatar {
+  display: none;
+
+  @include medium {
+    display: inline-block;
+  }
+}

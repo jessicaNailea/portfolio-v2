@@ -1,0 +1,25 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.education-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $dark;
+
+  @include large {
+    padding: 36px;
+    height: 600px;
+  }
+}
+
+.education-sub-title {
+  font-size: 24px;
+  color: $blue;
+}
+
+.education-description {
+  color: $white;
+}
